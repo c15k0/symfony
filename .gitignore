@@ -13,3 +13,7 @@
 /web/
 /composer.lock
 /.idea/
+/_mac/
+/codestyles/
+/keymaps/
+/*.xml
