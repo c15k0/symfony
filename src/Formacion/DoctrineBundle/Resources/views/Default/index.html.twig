@@ -1,1 +1,16 @@
-Hello World!
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <article class="col-xs-12">
+        <h1>Capítulo 3: ORM</h1>
+        <p>Ejecutar por terminal: <code>app/console generate:doctrine:entity</code> para generar una nueva entidad</p>
+        <p>Ejecutar por terminal: <code>app/console doctrine:schema:update --force</code> para sincronizar con la BD</p>
+        <p>Ejecutar por terminal: <code>app/console generate:doctrine:crud</code> para generar los formularios de cada entidad y poder manipular los datos</p>
+        <p>Por favor revisar en la carpeta del repositorio <code>/src/Formacion/DoctrineBundle</code></p>
+        <p>La evolución de las entidades según las prácticas están registradas en cada uno de los commits de la rama</p>
+        <ol class="list-group">
+            <li class="list-group-item">Formulario entidad arista <a href="{{ path('arista_index') }}" target="_blank">--></a> </li>
+            <li class="list-group-item">Formulario entidad figura <a href="{{ path('figura_index') }}" target="_blank">--></a> </li>
+        </ol>
+    </article>
+{% endblock %}

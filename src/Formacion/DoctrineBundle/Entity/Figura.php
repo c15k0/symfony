@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Figura
  *
- * @ORM\Table(name="figura")
+ * @ORM\Table(name="FIGURAS")
  * @ORM\Entity(repositoryClass="Formacion\DoctrineBundle\Repository\FiguraRepository")
  */
 class Figura
@@ -15,7 +15,7 @@ class Figura
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="ID_FIGURA", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,23 +24,28 @@ class Figura
     /**
      * @var string
      *
-     * @ORM\Column(name="nombre", type="string", length=100)
+     * @ORM\Column(name="NOMBRE", type="string", length=100)
      */
     private $nombre;
 
     /**
      * @var array
      *
-     * @ORM\Column(name="aristas", type="array")
+     * @ORM\Column(name="ARISTAS", type="array")
      */
     private $aristas;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="color", type="string", length=100)
+     * @ORM\Column(name="COLOR", type="string", length=100)
      */
     private $color;
+
+    public function __construct()
+    {
+        $this->aristas = [];
+    }
 
 
     /**

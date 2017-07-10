@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Arista
  *
- * @ORM\Table(name="arista")
+ * @ORM\Table(name="ARISTAS")
  * @ORM\Entity(repositoryClass="Formacion\DoctrineBundle\Repository\AristaRepository")
  */
 class Arista
@@ -15,7 +15,7 @@ class Arista
     /**
      * @var int
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="ID_ARISTA", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,7 +24,7 @@ class Arista
     /**
      * @var string
      *
-     * @ORM\Column(name="longitud", type="decimal", precision=4, scale=4)
+     * @ORM\Column(name="LONGITUD", type="decimal", precision=6, scale=4)
      */
     private $longitud;
 

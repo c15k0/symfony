@@ -1,7 +1,7 @@
 formacion_doctrine:
     resource: "@FormacionDoctrineBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /doctrine
 
 formacion_route:
     resource: "@FormacionRouteBundle/Controller/"

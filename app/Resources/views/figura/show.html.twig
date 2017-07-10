@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Figura</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ figura.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ figura.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Aristas</th>
+                <td>{% if figura.aristas %}{{ figura.aristas|join(', ') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Color</th>
+                <td>{{ figura.color }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('figura_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('figura_edit', { 'id': figura.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

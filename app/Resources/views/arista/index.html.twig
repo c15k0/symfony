@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Aristas list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Longitud</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for aristum in aristas %}
+            <tr>
+                <td><a href="{{ path('arista_show', { 'id': aristum.id }) }}">{{ aristum.id }}</a></td>
+                <td>{{ aristum.longitud }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('arista_show', { 'id': aristum.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('arista_edit', { 'id': aristum.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('arista_new') }}">Create a new aristum</a>
+        </li>
+    </ul>
+{% endblock %}

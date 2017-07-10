@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Figuras list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Aristas</th>
+                <th>Color</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for figura in figuras %}
+            <tr>
+                <td><a href="{{ path('figura_show', { 'id': figura.id }) }}">{{ figura.id }}</a></td>
+                <td>{{ figura.nombre }}</td>
+                <td>{% if figura.aristas %}{{ figura.aristas|join(', ') }}{% endif %}</td>
+                <td>{{ figura.color }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('figura_show', { 'id': figura.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('figura_edit', { 'id': figura.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('figura_new') }}">Create a new figura</a>
+        </li>
+    </ul>
+{% endblock %}
