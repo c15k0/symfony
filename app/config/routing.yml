@@ -1,3 +1,8 @@
+formacion_doctrine:
+    resource: "@FormacionDoctrineBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 formacion_route:
     resource: "@FormacionRouteBundle/Controller/"
     type:     annotation
