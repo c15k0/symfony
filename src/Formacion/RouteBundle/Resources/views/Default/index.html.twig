@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <article class="col-xs-12">
+        <h1>Capítulo 2: ROUTING</h1>
+        <p>Por favor revisar en la carpeta del repositorio <code>/src/Formacion/RouteBundle</code></p>
+        <ol class="list-group">
+            <li class="list-group-item">Rutas sencillas <a href="{{ path('route_simple_example') }}" target="_blank">--></a></li>
+            <li class="list-group-item">Rutas complejas y con parámetros <a href="{{ path('route_example_with_param', {param:'test'}) }}" target="_blank">--></a></li>
+            <li class="list-group-item">Validación de parámetros <a href="{{ path('route_example_with_letters_validation', {parameter:'test'}) }}" target="_blank">--></a> <a href="{{ path('route_example_with_number_validation', {parameter:123}) }}" target="_blank">--></a></li>
+            <li class="list-group-item">Parámetros por defecto <a href="{{ path('route_example_with_default_param') }}" target="_blank">--></a></li>
+            <li class="list-group-item">Gestionando los métodos HTTP <a href="{{ path('route_example_with_other_method') }}" target="_blank">--> ({{ path('route_example_with_other_method') }} )</a></li>
+        </ol>
+    </article>
+{% endblock %}
