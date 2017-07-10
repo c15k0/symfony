@@ -1,0 +1,5 @@
+formacion_solid:
+    resource: "@FormacionSolidBundle/Controller/"
+    type:     annotation
+    prefix:   /solid
+
