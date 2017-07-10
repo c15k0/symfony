@@ -1,0 +1,11 @@
+<application>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter home="/usr/bin/php" id="9917aa94-742e-4aa7-8660-05b66c63849e" name="PHP 5.6" debugger_id="php.debugger.XDebug" debugger_extension="/private/etc/php/extensions/xdebug.so" />
+      <interpreter home="/usr/local/php5-7.1.4-20170506-100436/bin/php" id="0d68199d-3c39-404b-9ee9-6623c80a008e" name="PHP" debugger_id="php.debugger.XDebug" />
+    </interpreters>
+  </component>
+  <component name="PhpSmartKeysConfiguration">
+    <option name="smartFunctionParametersCompletion" value="true" />
+  </component>
+</application>
