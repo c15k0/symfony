@@ -1,3 +1,8 @@
+formacion_route:
+    resource: "@FormacionRouteBundle/Controller/"
+    type:     annotation
+    prefix:   /route
+
 formacion_solid:
     resource: "@FormacionSolidBundle/Controller/"
     type:     annotation
