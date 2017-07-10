@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <article class="col-xs-12">
+        <h1>Capítulo 1:SOLID</h1>
+        <p>Por favor revisar en la carpeta del repositorio <code>/src/Formacion/SolidBundle</code></p>
+        <ol class="list-group">
+            <li class="list-group-item"><b class="badge badge-primary">S</b>ingle <b>R</b>esponsability <b>P</b>rinciple: Pricipio de responsabilidad única, cada objeto debe contener implementaciones relacionadas sólo con su contexto</li>
+            <li class="list-group-item"><b class="badge badge-primary">O</b>pen-<b>C</b>losed: Los objetos deben estar refactorizados de tal manera que esté abierta la modificación de éstos sin implicar tocar la propia clase</li>
+            <li class="list-group-item"><b class="badge badge-primary">L</b>iskov <b>S</b>ubstitution <b>P</b>rinciple: Es necesario tipar las variables para restringir el uso de los parámetros y así poder testear nuestro código</li>
+            <li class="list-group-item"><b class="badge badge-primary">I</b>nterface <b>S</b>egregation <b>P</b>rinciple: El contexto general de los objetos vendrá definido por sus interfaces</li>
+            <li class="list-group-item"><b class="badge badge-primary">D</b>ependency <b>I</b>inversion <b>P</b>rinciple: Pricipio de inversión de dependencias, los objetos han de poder usarse por sí sólos con un conjunto mínimo de interdependencias</li>
+        </ol>
+    </article>
+{% endblock %}
