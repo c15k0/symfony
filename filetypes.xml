@@ -5,8 +5,8 @@
       <mapping ext="theme" type="PHP" />
       <mapping ext="profile" type="PHP" />
       <mapping ext="engine" type="PHP" />
-      <mapping ext="test" type="PHP" />
       <mapping ext="install" type="PHP" />
+      <mapping ext="test" type="PHP" />
       <mapping pattern="key" type="PLAIN_TEXT" />
       <mapping pattern="6c46855baf8a991fc0a621559535a35817990e60" type="PLAIN_TEXT" />
       <mapping pattern="aws-ssh" type="PLAIN_TEXT" />
@@ -14,6 +14,7 @@
       <mapping pattern="3c4a15b9e529abc9ee168196a14165160f918889" type="PLAIN_TEXT" />
       <mapping ext="mmdb" type="PLAIN_TEXT" />
       <mapping ext="pem" type="PLAIN_TEXT" />
+      <mapping ext="dockerfile" type="PLAIN_TEXT" />
       <mapping ext="fnc" type="DBN-PSQL" />
       <mapping ext="pkb" type="DBN-PSQL" />
       <mapping ext="pkg" type="DBN-PSQL" />
